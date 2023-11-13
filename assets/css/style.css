@@ -124,6 +124,13 @@ ul li::before {
     padding: 0 1.3em;
   }
 }
+@media screen and (max-width: 1024px) {
+  .main-image {
+    height: 120px;
+    width: 120px;
+    align-self: flex-start;
+  }
+}
 @media screen and (max-width: 768px) {
   body > div {
     padding: 3em 2em 0;
@@ -139,12 +146,10 @@ ul li::before {
     position: relative;
     top: 1.2em;
   }
-}
-@media screen and (max-width: 768px) {
   .flex {
     flex-direction: column-reverse;
   }
-  .main-image {
-    align-self: flex-end
+  .flip-vertical {
+    transform: scaleX(1);
   }
 }
