@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 4rem auto 0;
+    padding: 0 2rem;
+    max-width: 900px;
+    line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-weight: 500;
+    color: #4a4a4f;
+}
+
+h2 {
+    box-shadow: -2px 2px 2px 0px #e84610;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    margin: 2rem 0;
+}
+
+hr {
+    border: 2px solid #e84610;
+}
+
+hr:first-of-type {
+    margin-bottom: 2em;
+}
+
+hr.light {
+    border: solid 1px #dedede;
+}
+
+ul {
+    list-style: none;
+    padding: 0 5em;
+}
+
+ul li {
+    position: relative;
+    margin: .4em 0;
+}
+
+ul li::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background: url("../images/ci-circ.png") center / contain;
+    position: absolute;
+    top: .15em;
+    left: -2em;
+}
+
+.main-image {
+  width: 180px;
+  height: 180px;
+  align-self: flex-end;
+}
+
+/* ------------------ utilities ----------------- */
+.flex {
+  display: flex;
+}
+
+.flip-vertical {
+  transform: scaleX(-1);
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+/* ------------------ media queries ----------------- */
+@media screen and (max-width: 768px) {
+  ul {
+    padding: 0 0 0 3em;
+  }
+}
+@media screen and (max-width: 568px) {
+  ul {
+    padding: 0 0 0 1.4em;
+  }
+  .main-image {
+    width: 80px;
+    height: 80px;
+    align-self: flex-start;
+    position: relative;
+    top: 1.2em;
+  }
+}
+
